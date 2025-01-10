@@ -1,0 +1,21 @@
+.DraftEditor-root {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.DraftEditor-editorContainer {
+  background: #f8f8f8;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0;
+}
+
+.header-one {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.RED {
+  color: red;
+}
