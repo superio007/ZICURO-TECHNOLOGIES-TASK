@@ -1,8 +1,19 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Steps to run project : 
 
-Currently, two official plugins are available:
+First, clone my repository. Then, install the Node packages and run the command `npm run dev` to launch the project. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To add a header, use the following syntax:
+- `#` for h1
+- `##` for h2
+- `###` for h3
+
+For text styling, use:
+- `*` for bold
+- `**` for red text
+- `***` for underline
+
+To remove the previous style, type `!`. 
+
+Note: To add a style after each character, insert a space to apply the desired style.
