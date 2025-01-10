@@ -1,21 +1,17 @@
-.DraftEditor-root {
-  padding: 10px;
-  font-family: Arial, sans-serif;
-}
-
-.DraftEditor-editorContainer {
-  background: #f8f8f8;
-}
-
-.public-DraftStyleDefault-block {
-  margin: 0;
-}
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .header-one {
-  font-size: 24px;
+  font-size: 2em;
   font-weight: bold;
 }
 
-.RED {
-  color: red;
+.header-two {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.header-three {
+  font-size: 1.5em;
+  font-weight: bold;
 }
