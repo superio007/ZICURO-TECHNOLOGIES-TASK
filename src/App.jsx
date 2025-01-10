@@ -170,35 +170,41 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+      {/* Header Section */}
+
+      <div style={{ width: "80%",marginBottom: "20px" }}>
+        <div className="row offset-5 justify-content-between align-items-center">
+          <div className="col-md-8">
+            <h1 className="">Demo editor by Kiran Dhoke</h1>
+          </div>
+          <div className="col-md-1">
+            <button onClick={handleSave} className="save-button">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Title Input
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Enter title..."
-          className="w-full text-3xl font-bold mb-6 p-2 border-b-2 border-gray-200 focus:border-blue-500 outline-none"
-        />
-
-        <button
-          onClick={handleSave}
-          className="mb-6 inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-        >
-          <Save className="w-4 h-4 mr-2" />
-          Save
-        </button>
-
-        <div className="prose max-w-none">
-          <div className="border rounded-lg p-4 min-h-[300px]">
-            <Editor
-              editorState={editorState}
-              onChange={setEditorState}
-              handleBeforeInput={handleBeforeInput}
-              handleKeyCommand={handleKeyCommand}
-              customStyleMap={styleMap}
-              blockStyleFn={blockStyleFn}
-              placeholder="Start typing... Use # for headers, * for bold, ** for red text, *** for underline, and ! to remove styles"
-            />
-          </div>
+          className="editor-title-input"
+        /> */}
+      <div className="editor-container">
+        {/* Editor */}
+        <div className="editor-textarea">
+          <Editor
+            editorState={editorState}
+            onChange={setEditorState}
+            handleBeforeInput={handleBeforeInput}
+            handleKeyCommand={handleKeyCommand}
+            customStyleMap={styleMap}
+            blockStyleFn={blockStyleFn}
+            placeholder="Start typing... Use # for headers, * for bold, ** for red text, *** for underline, and ! to remove styles"
+          />
         </div>
       </div>
     </div>
